@@ -71,7 +71,7 @@ void* checkSubgrid(void* args) {
 }
 
 int main() {
-    // Read the Sudoku grid from standard input
+    // Read the Sodoko grid from standard input
     printf("Enter Sudoku grid (9 rows of 9 numbers each):\n");
     for (int i = 0; i < GRID_SIZE; i++) {
         for (int j = 0; j < GRID_SIZE; j++) {
@@ -121,11 +121,11 @@ int main() {
     // Check results
     for (int i = 0; i < NUM_THREADS; i++) {
         if (valid[i] == 0) {
-            printf("Sudoku solution is invalid.\n");
+            printf("Sodoko solution is invalid.\n");
             return EXIT_SUCCESS;
         }
     }
 
-    printf("Sudoku solution is valid!\n");
+    printf("Sodoko solution is valid!\n");
     return EXIT_SUCCESS;
 }
